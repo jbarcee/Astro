@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-const pageTitle = 'Inicio'
+const pageTitle = 'Blog';
 ---
 
 <html lang="en">
@@ -12,10 +12,15 @@ const pageTitle = 'Inicio'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/about">About</a>
-		<a href="/blog">Blog</a>
+		<a href="/">Inicio</a>
+        <a href="/about">About</a>
+		
 		<h1>{pageTitle}</h1>
-		<h2>Tutorial de Astro</h2>
-		<h3>Esta es la pagina principal</h3>
+        <h2>Aqui postearé cosas...</h2>
+        <ul>
+            <li><a href="/posts/post-1/">Post 1</a></li>
+            <li><a href="/posts/post-2/">Post 2</a></li>
+            <li><a href="/posts/post-3/">Post 3</a></li>
+        </ul>
 	</body>
 </html>
