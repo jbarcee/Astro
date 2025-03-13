@@ -1,0 +1,24 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+
+
+<p>Written by {frontmatter.author}</p>
+<slot />
+<div class="img-container">
+    <img width="500" src={frontmatter.image.url} alt="">
+
+</div>
+</BaseLayout>
+
+
+<style>
+    .img-container {
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+</style>
